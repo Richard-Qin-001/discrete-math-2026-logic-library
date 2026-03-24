@@ -1,1 +1,1 @@
-./benchmark/test_results/**/*.txt
+benchmark/test_results/**/*.txt
