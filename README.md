@@ -36,15 +36,15 @@ This repository contains two related parts:
 
 ### Operators
 
-- ! : negation
-- & : conjunction
-- | : disjunction
-- > : implication
-- - : biconditional
+- `!` : negation
+- `&` : conjunction
+- `|` : disjunction
+- `>` : implication
+- `-` : biconditional
 
 ### Parentheses
 
-- ( and )
+- `(` and `)`
 
 ### Variable names
 
@@ -53,11 +53,11 @@ This repository contains two related parts:
 
 ### Precedence (highest to lowest)
 
-1. !
-2. &
-3. |
-4. >
-5. -
+1. `!`
+2. `&`
+3. `|`
+4. `>`
+5. `-`
 
 ## Python Usage
 
