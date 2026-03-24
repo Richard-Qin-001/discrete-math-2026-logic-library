@@ -1,0 +1,6 @@
+Scenario,checker,legacy,recursion,simd_ord_fill,simd_ord_precalc,simd_avx2_fill,simd_avx2_precalc,simd_avx512_precalc,simd_avx512_omp_parallel
+"var_count = 21, wff_len = 5000",0.001951s,47.129022s,43.920296s,0.571434s,0.541085s,0.237972s,0.176265s,0.118265s,0.079258s
+"var_count = 22, wff_len = 2000",0.002071s,38.371854s,34.538539s,0.530865s,0.489631s,0.312511s,0.193821s,0.142460s,0.106942s
+"var_count = 22, wff_len = 120000",0.003846s,TIMEOUT,TIMEOUT,48.236743s,48.282177s,12.709980s,12.622029s,6.524959s,0.655331s
+"var_count = 22, wff_len = 500000",0.010432s,TIMEOUT,TIMEOUT,TIMEOUT,TIMEOUT,52.977799s,53.231869s,26.935434s,2.432253s
+"var_count = 22, wff_len = 1000000",0.018722s,TIMEOUT,TIMEOUT,TIMEOUT,TIMEOUT,TIMEOUT,TIMEOUT,54.070732s,4.844695s
