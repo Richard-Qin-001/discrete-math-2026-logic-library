@@ -11,7 +11,7 @@ endif()
 
 find_package(OpenMP REQUIRED)
 
-option(BENCHMARK_DEBUG "Keep debug behavior like run_test.py DEBUG=True" ON)
+option(BENCHMARK_DEBUG "Keep debug-friendly benchmark behavior" ON)
 option(BENCHMARK_FORCE_ISA "Build AVX targets even if host CPU flags are missing" OFF)
 
 set(HOST_CPU_FLAGS "")
@@ -106,6 +106,12 @@ add_executable(generator utility/generator.cc)
 target_compile_options(generator PRIVATE -O3)
 if(NOT BENCHMARK_DEBUG)
     target_compile_definitions(generator PRIVATE NDEBUG)
+endif()
+
+add_executable(benchmark_runner utility/benchmark_runner.cc)
+target_compile_options(benchmark_runner PRIVATE -O3)
+if(NOT BENCHMARK_DEBUG)
+    target_compile_definitions(benchmark_runner PRIVATE NDEBUG)
 endif()
 
 add_target_if_supported(legacy source/legacy.cpp)
